@@ -110,7 +110,7 @@
     mb-5: es una clase para margen desde bottom 
     -->
     <div class="container-fluid">
-        <header class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <header class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-2">
             <div class="caja w-25 p-2">Logo</div>
             <div class="caja w-50 p-2">
 
@@ -137,7 +137,12 @@
 
         <main>
             <div class="row mb-5">
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
+            
+            
+            <!-- col-12: usa el 100% en pantallas xs
+            col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
+
+                <div class="col-12 col-md-6 mb-4">
                     <div class="d-flex flex-column gap-3">
                         <div class="caja cajaverdeagua p-2">
                             <h3 class="mt-2 mb-2"><i class="bi bi-cart3"></i> Título</h3>
@@ -156,42 +161,31 @@
                                 <li class="list-group-item">A second item</li>
                             </ul>
                         </div>
-
-                             <!-- d-flex: aplica flex al contenedor
-            col-md-6: usa el 50% del ancho del contenedor en pantallas medianas
-        flex-fill: hace que el hijo de un contendor d-flex use todo el espacio hasta expandirse y llenar el area que sobra -->
-
-
-                        <div class="d-flex gap-3">
-                            <div class="caja flex-fill p-5 cajagris">Aqui texto</div>
-                            <div class="caja flex-fill p-1 cajagris">Aqui texto</div>
+                           <!-- d-flex: aplica flex al contenedor
+            col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <div class="caja flex-fill p-5 cajagris"></div>
+                            <div class="caja flex-fill p-1 cajagris"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 cajacelesteagua">
-                    <!-- inicio Formulario . Obtenidos desde boostrap https://getbootstrap.com/docs/5.3/forms/form-control/ -->
-                    <div class="mb-5">
-            
-                    </div><div class="mb-3 p-3">
+                <div class="col-12 col-md-6 caja cajacelesteagua  mb-4">
+                    <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
                     </div>
-                    <div class="mb-3 p-3">
+                    <div class="mb-3">
                         <label for="exampleFormControlInput2" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="correo@correo.cl">
                     </div>
-                    <div class="mb-3 p-3">
+                    <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    </div>
-                    <!-- Fin form-->
                 </div>
             </div>
-        </main>
-        
-        <section>
-            <!-- 1 caja centrada -->
+
+            <!-- 1 caja -->
 
             <!-- mb: es el margen desde bottom 
            justify-content-center: deja la caja centrada 
@@ -204,9 +198,7 @@
                     <h2 class="margen">Titulo</h2>
                 </div>
             </div>
-        </section>
 
-        <section>
             <!-- 3 cajas -->
 
             <div class="row align-items-start mb-4">
@@ -241,31 +233,23 @@
                     </div>
                 </div>
             </div>
-    </section>
-    <footer>
-            <div class="row mb-4">
-                <!-- En la imagen propuesta se ve que la caja empieza a la izquierda , por eso se utiliza  justify-content-start-->
-                <div class="col-4">
+
+            <div class="row mb-4 ">
+                <!-- Alinea la caja a la izquierda-->
+                <div class="col">
                     <div class="caja w-75 p-2 justify-content-start cajagris">Pie</div>
                 </div>
+                <!-- Alinea la caja a la izquierda con un margen izquierdo me-4-->
 
-                <!-- En la imagen propuesta se ve que la caja comienza a la derecha , por eso se utiliza  justify-content-end-->
-
-                <div class="col-4 d-flex justify-content-end">
+                <div class="col d-flex justify-content-center ps-4">
                     <div class="caja w-75 p-2 cajacelesteagua">
                         <i class="bi bi-instagram"></i><a href="">Instagram</a>
                         <i class="bi bi-facebook"></i><a href="">Facebook</a>
                     </div>
                 </div>
-
-                <!-- En la imagen propuesta se ve que la caja comienza a la izquieda , por eso se utiliza  justify-content-start-->
-
-                <div class="col-4 d-flex justify-content-start">
+                <div class="col d-flex justify-content-start pe-5 me-5">
                     <div class="caja w-75 p-2 cajagris">
-
-                        <!-- Es un SVG que encontré en internet, con movimiento -->
-
-                        <?xml version="1.0"?>
+                    <!--   <?xml version="1.0"?>
                         <svg
                           width="120"
                           height="80"
@@ -281,13 +265,11 @@
                               dur="10s"
                               repeatCount="indefinite" />
                           </rect>
-                        </svg>
-
-                        <!--Fin del SVG-->
+                        </svg> -->
                     </div>
                 </div>
             </div>
-        </footer>
+        </main>
     </div>
 
     <script>
