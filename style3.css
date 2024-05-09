@@ -1,35 +1,86 @@
- svg {
-  width: 300px;
-  display: block;
-  position: absolute;
-  
-  .line1 {
-    stroke-dasharray: 340;
-    stroke-dashoffset: 40;
-    animation: dash 1.5s linear alternate infinite;
-  }
 
-  .line2 {
-    stroke-dasharray: 320;
-    stroke-dashoffset: 320;
-    animation: dash2 1.5s linear alternate infinite;
-  }
+        body {
+            font-family: "Roboto", sans-serif;
+        }
 
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 360;
-    }
-    to {
-      stroke-dashoffset: 40;
-    }
-  }
+        :root {
+            --primary-color: #1a1e29;
+            --secondary-color: #fae8e8;
+            --primary-color-hover: #132d46;
+            --secondary-color-hover: #e6d4d4;
+        }
 
-  @keyframes dash2 {
-    from {
-      stroke-dashoffset: 280;
-    }
-    to {
-      stroke-dashoffset: -40;
-    }
-  }
-}
+        .btn-personalizado-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-personalizado-primary:hover,
+        .btn-personalizado-primary:focus {
+            background-color: var(--primary-color-hover);
+            border-color: var(--primary-color-hover);
+            color: white;
+        }
+
+        .btn-personalizado-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: #00c48e;
+        }
+
+        .btn-personalizado-secondary:hover,
+        .btn-personalizado-secondary:focus {
+            background-color: var(--secondary-color-hover);
+            border-color: var(--secondary-color-hover);
+        }
+
+        .caja {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #132d46;
+   
+        }
+
+        .cajaverdeagua {
+            background-color: #c2eadf;
+        }
+
+        .cajarosaagua {
+            background-color: #fae8e8;
+        }
+
+        .cajacelesteagua {
+            background-color: #dcecff;
+        }
+
+        .cajagris {
+            background-color: #c5c5c5;
+        }
+
+        .navbar-personalizada {
+            background-color: #132d46;
+            color: white;
+        }
+
+        .navbar-personalizada .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .list-group .list-group-item {
+            background: none;
+            border: none;
+        }
+
+        .card {
+            border-radius: 0;
+        }
+        .w-personalizado {
+            width: 31%;
+            background-color: #c2eadf;
+   
+        }
+ 
