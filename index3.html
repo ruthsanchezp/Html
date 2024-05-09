@@ -139,10 +139,13 @@
         </header>
 
         <main>
-            <div class="row mb-5 g-3">
+            <div class="row mb-5 g-5">
                 <!-- col-12: usa el 100% en pantallas xs
-                col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
-                <div class="col-12 col-md-6 mb-4">
+                col-md-6: usa el 50% del ancho del contenedor en pantallas medianas 
+                g-3, 4, etc: Añade espacio entre col
+                gap-3,4, etc: añade espacio tambien, pero para flex y grid
+            -->
+                <div class="col-12 col-md-6 mb-5">
                     <div class="d-flex flex-column gap-3">
                         <div class="caja cajaverdeagua p-2">
                             <h3 class="mt-2 mb-2"><i class="bi bi-cart3"></i> Título</h3>
@@ -169,7 +172,7 @@
                 </div>
                 <!-- col-12: usa el 100% en pantallas xs
                 col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
-                <div class="col-12 col-md-6 caja mb-4 p-2 cajagris">
+                <div class="col-12 col-md-6 caja mb-5 p-2 cajagris">
                     <div class="mb-3 p-2">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
@@ -190,8 +193,8 @@
             <!-- mb: es el margen desde bottom 
             justify-content-center: deja la caja centrada 
             -->
-            <div class="d-flex justify-content-center mb-4 ">
-                <div class="caja cajagris  w-personalizado ">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="caja cajagris w-personalizado mb-5">
                     <h2 class="m-2">Título</h2>
                 </div>
             </div>
@@ -241,7 +244,7 @@
                 </div>
                 <!-- Alinea la caja a la izquierda con un margen izquierdo me-4-->
 
-                <div class="col d-flex justify-content-end me-3">
+                <div class="col d-flex justify-content-end me-4">
                     <div class="caja w-75 p-2 cajacelesteagua">
                         <i class="bi bi-instagram"></i><a href="">Instagram</a>
                         <i class="bi bi-facebook"></i><a href="">Facebook</a>
