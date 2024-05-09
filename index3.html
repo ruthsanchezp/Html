@@ -57,6 +57,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            background-color: #c5c5c5;
         }
 
         .cajaverdeagua {
@@ -82,21 +83,16 @@
 
         .navbar-personalizada .navbar-nav .nav-link {
             color: white;
-            
         }
-
 
         .list-group .list-group-item {
             background: none;
             border: none;
         }
 
-
         .card {
-            width: 100%;
             border-radius: 0;
         }
-   
 
     </style>
 
@@ -110,8 +106,8 @@
     container-fluid: Es una clase de contenedor que se ajusta al tamaño del navegado (100%)
     mb-5: es una clase para margen desde bottom 
     -->
-    <div class="container-fluid">
-        <header class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-2" >
+    <div class="container-fluid p-5">
+        <header class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-2">
             <div class="caja w-25 p-2">Logo</div>
             <div class="caja pt-2">
 
@@ -120,14 +116,13 @@
                 <nav class="navbar navbar-expand-lg navbar-personalizada p-2">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="color:#00c48e"><i class="bi bi-list"></i>
-                        </span>
+                        <span class="navbar-toggler-icon" style="color:#00c48e"><i class="bi bi-list"></i></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link active" href="#"><i class="bi bi-house"></i> Inicio <span class="visually-hidden">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Texto menu 1</a>
-                            <a class="nav-item nav-link" href="#">Texto menu 2</a>
+                            <a class="nav-item nav-link" href="#">Texto menú 1</a>
+                            <a class="nav-item nav-link" href="#">Texto menú 2</a>
                         </div>
                     </div>
                 </nav>
@@ -138,12 +133,9 @@
         </header>
 
         <main>
-            <div class="row mb-5">
-            
-            
-            <!-- col-12: usa el 100% en pantallas xs
-            col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
-
+            <div class="row mb-5 g-3">
+                <!-- col-12: usa el 100% en pantallas xs
+                col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
                 <div class="col-12 col-md-6 mb-4">
                     <div class="d-flex flex-column gap-3">
                         <div class="caja cajaverdeagua p-2">
@@ -163,49 +155,48 @@
                                 <li class="list-group-item">A second item</li>
                             </ul>
                         </div>
-                           <!-- d-flex: aplica flex al contenedor
-            col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
                         <div class="d-flex flex-column flex-md-row gap-3">
-                            <div class="caja flex-fill p-5 cajagris"></div>
-                            <div class="caja flex-fill p-1 cajagris"></div>
+                            <div class="caja flex-fill w-75 cajagris p-3">TEXTO AQUÍ</div>
+                            <div class="caja flex-fill w-25 cajagris p-3">TEXTO AQUÍ</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 caja cajacelesteagua  mb-4">
-                    <div class="mb-3">
+                <!-- col-12: usa el 100% en pantallas xs
+                col-md-6: usa el 50% del ancho del contenedor en pantallas medianas -->
+                <div class="col-12 col-md-6 caja mb-4 p-2">
+                    <div class="mb-3 p-2">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 p-2">
                         <label for="exampleFormControlInput2" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="correo@correo.cl">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 p-2">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </div>
             </div>
+        </main>
 
         <section>
-            <!-- 1 caja -->
-
             <!-- mb: es el margen desde bottom 
-           justify-content-center: deja la caja centrada 
-           gap: añade espacio entre los elementos hijos
-           d-flex: display flex, activa el modo flex
-        -->
-
+            justify-content-center: deja la caja centrada 
+            -->
             <div class="d-flex justify-content-center mb-4">
                 <div class="caja w-50 p-2 cajagris">
-                    <h2 class="margen">Titulo</h2>
+                    <h2 class="margen">Título</h2>
                 </div>
             </div>
         </section>
-            <!-- 3 cajas -->
+
+        <!-- 3 cajas -->
         <section>
-            <div class="row align-items-start mb-4">
-                <div class="col">
+            <!-- g-3: añade un espacio de `1rem` (16px) entre las columnas
+            align-items-start: alinea las tarjetas al inicio del contenedor -->
+            <div class="row g-3 align-items-start mb-4">
+                <div class="col-12 col-md-4">
                     <div class="card cajacelesteagua">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -214,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <div class="card cajagris">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -223,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <div class="card cajacelesteagua">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -234,6 +225,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Footer -->
         <footer>
             <div class="row mb-4 ">
                 <!-- Alinea la caja a la izquierda-->
@@ -271,7 +264,7 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </div> 
 
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
