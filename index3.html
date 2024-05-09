@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,39 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <style>
- 
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        :root {
+            --primary-color: #1a1e29;
+            --secondary-color: #fae8e8;
+            --primary-color-hover: #132d46;
+            --secondary-color-hover: #e6d4d4;
+        }
+
+        .btn-personalizado-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-personalizado-primary:hover,
+        .btn-personalizado-primary:focus {
+            background-color: var(--primary-color-hover);
+            border-color: var(--primary-color-hover);
+            color: white;
+        }
+
+        .btn-personalizado-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: #00c48e;
+        }
+
+        .btn-personalizado-secondary:hover,
+        .btn-personalizado-secondary:focus {
+            background-color: var(--secondary-color-hover);
+            border-color: var(--secondary-color-hover);
+        }
+
 
         .caja {
-            background-color: #e0e0e0;
             display: flex;
+            flex-direction: column; /* Change to column for vertical alignment */
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
+
+        .cajaverdeagua {
+            background-color: #c2eadf;
+        }
+
+        .cajarosaagua {
+            background-color: #fae8e8;
+        }
+        .cajacelesteagua {
+            background-color: #dcecff;
+        }
+
+
+        .navbar-personalizada {
+            background-color: #132d46;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .navbar-personalizada .navbar-nav .nav-link {
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .margenSubtitulos {
+            margin-top: 5px; 
+            margin-bottom: 5px; 
+        }
+        .list-group .list-group-item {
+            background: none;
+            border: none;
+        }
+
     </style>
+
 </head>
 
-<body class="bg-light">
-    <div class="container-fluid bg-white p-4 p-md-5 shadow-sm my-5">
+<body>
+    <div class="container-fluid p-4 p-md-5">
         <header class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="caja w-25 p-3">Logo</div>
             <div class="caja w-50 p-4 mt-4 mt-md-0">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="navbar navbar-expand-lg navbar-personalizada p-0">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            <a class="nav-item nav-link" href="#">Pricing</a>
-                            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-item nav-link active" href="#"><i class="bi bi-house"></i>                               
+                                 Inicio <span class="visually-hidden">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Menu</a>
+                            <a class="nav-item nav-link" href="#">Menu</a>
                         </div>
                     </div>
                 </nav>
@@ -50,63 +124,95 @@
             <div class="row mb-5">
                 <div class="col-12 col-md-6 mb-4 mb-md-0">
                     <div class="d-flex flex-column gap-3">
-                        <div class="caja p-2">Algo</div>
-                        <div class="caja p-2">Algo</div>
+                        <div class="caja cajaverdeagua p-2">
+                            <h3 class="margenSubtitulos"><i class="bi bi-cart3"></i>
+                                Título</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                   
+                                  </ul>
+                
+                        </div>
+                        <div class="caja cajarosaagua p-2">
+                            <h3 class="margenSubtitulos"><i class="bi bi-people"></i>
+                                Título
+                            </h3>
+                            <label for="customRange1" class="form-label">Example range</label>
+                                <input type="range" class="form-range" id="customRange1">
+                                    <br />
+                                <ul class="list-group">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                
+                                </ul>
+
+
+                        </div>
                         <div class="d-flex flex-column flex-md-row gap-3">
-                            <div class="caja flex-fill p-2">Algo</div>
-                            <div class="caja flex-fill p-2">Algo</div>
+                            <div class="caja flex-fill p-2"></div>
+                            <div class="caja flex-fill p-2"><button type="button" class="btn btn-lg btn-personalizado-primary" data-bs-toggle="popover"
+                                    data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click
+                                    to toggle popover</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="caja p-4">
-                        <p>Algo</p>
-                    </div>
-                </div>
+                <div class="caja col-12 col-md-6  cajacelesteagua">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="correo@correo.cl">
+                      </div>
+                    
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
             </div>
 
-            <div class="d-flex justify-content-center mb-5">
-                <div class="caja w-50 p-2">
-                           
-                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../images/1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                
-                </div>
+            <div class="d-flex justify-content-center mb-5 ">
+                <div class="caja w-50 p-2">Algo</div>
             </div>
 
             <div class="row mb-5">
-                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <div class="col-12 col-md-4 mb-4 mb-md-0 cajacelesteagua">
                     <div class="caja p-4">
-                        <p>Algo</p>
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-personalizado-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4 mb-md-0 position-relative">
+                <div class="col-12 col-md-4 mb-4 mb-md-0 position-relative cajacelesteagua">
                     <div class="caja d-flex align-items-center justify-content-center p-4 position-relative">
-                        <p class="m-0">Productos</p>
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-personalizado-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 cajacelesteagua">
                     <div class="caja p-4">
-                        <p>Texto</p>
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-personalizado-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,6 +230,11 @@
             </div>
         </main>
     </div>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 
 </html>
