@@ -94,6 +94,11 @@
         .card {
             border-radius: 0;
         }
+        .w-personalizado {
+            width: 31%;
+            background-color: #c2eadf;
+   
+        }
 
     </style>
 
@@ -107,8 +112,8 @@
     container-fluid: Es una clase de contenedor que se ajusta al tamaño del navegado (100%)
     mb-5: es una clase para margen desde bottom 
     -->
-    <div class="container-fluid p-5">
-        <header class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-2">
+    <div class="container-fluid p-5 g-3">
+        <header class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-2  ">
             <div class="caja col-2 p-2"><span style="color: #00c48e;">Logo</span></div>
             <div class="caja col-3 pt-2">
 
@@ -185,9 +190,9 @@
             <!-- mb: es el margen desde bottom 
             justify-content-center: deja la caja centrada 
             -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="caja w-25 p-2 cajagris">
-                    <h2 class="margen">Título</h2>
+            <div class="d-flex justify-content-center mb-4 ">
+                <div class="caja cajagris  w-personalizado ">
+                    <h2 class="m-2">Título</h2>
                 </div>
             </div>
         </section>
@@ -196,9 +201,9 @@
         <section>
             <!-- g-3: añade un espacio de `1rem` (16px) entre las columnas
             align-items-start: alinea las tarjetas al inicio del contenedor -->
-            <div class="row g-3 align-items-start mb-4">
-                <div class="col-12 col-md-4">
-                    <div class="card cajacelesteagua">
+            <div class="row g-5 align-items-start mb-4">
+                <div class="col-12 col-md-4 ">
+                    <div class="card cajacelesteagua ">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -206,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-3">
                     <div class="card cajagris">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -215,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4  col-3">
                     <div class="card cajacelesteagua">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -236,7 +241,7 @@
                 </div>
                 <!-- Alinea la caja a la izquierda con un margen izquierdo me-4-->
 
-                <div class="col d-flex justify-content-end">
+                <div class="col d-flex justify-content-end me-3">
                     <div class="caja w-75 p-2 cajacelesteagua">
                         <i class="bi bi-instagram"></i><a href="">Instagram</a>
                         <i class="bi bi-facebook"></i><a href="">Facebook</a>
