@@ -24,4 +24,4 @@ Se te pide que sea una sola página que permita establecer:
 5. **Prototipado Simple:**
    - A continuación, conoce las secciones en este dibujo, en formato de prototipado simple:
 
-![Prototipado](https://ibb.co/fpd7xM5)
+![Prototipado](https://ibb.co/fpd7xM5](https://github.com/ruthsanchezp/Html/blob/main/prototipo.png)
