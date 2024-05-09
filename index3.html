@@ -102,15 +102,29 @@
         .top {
             margin-top: 20px;
         }
+
+        .card {
+            width: 100%;
+        }
+
     </style>
 
 </head>
 
 <body>
-    <div class="container-fluid p-4 p-md-5">
+
+    <!-- w-25: 25%, w-50: 50%,  etc: es una clase de ancho que entrega boostrap con respecto al contenedor padre 
+    p-3 , p-3 : es una clase de padding a todos los datos del elemento 
+    d-flex: activa el modo flex
+    container-fluid: Es una clase de contenedor que se ajusta al tamaño del navegado (100%) 
+    -->
+    <div class="container-fluid">
         <header class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="caja w-25 p-3">Logo</div>
-            <div class="caja w-50 p-4 mt-4 mt-md-0">
+            <div class="caja w-25">Logo</div>
+            <div class="caja w-50">
+
+                <!-- Inicio Navbar. Obtenido de boostrap en https://getbootstrap.com/docs/5.3/components/navbar/ -->
+
                 <nav class="navbar navbar-expand-lg navbar-personalizada p-0">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,6 +138,9 @@
                         </div>
                     </div>
                 </nav>
+
+               <!-- Fin del NavBar -->
+
             </div>
         </header>
 
@@ -170,15 +187,24 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center mb-5 top">
+            <!-- 1 caja -->
+
+            <!-- mb: es el margen desde bottom 
+           justify-content-center: deja la caja centrada 
+           gap: añade espacio entre los elementos hijos
+           d-flex: display flex, activa el modo flex
+        -->
+
+            <div class="d-flex justify-content-center mb-4">
                 <div class="caja w-50 p-2 cajagris">
                     <h2 class="margen">Titulo</h2>
                 </div>
             </div>
 
-            <!-- Corregido: usa un `row` para las tarjetas -->
-            <div class="row justify-content-center mb-4 gap-2">
-                <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <!-- 3 cajas -->
+
+            <div class="row align-items-start mb-4">
+                <div class="col">
                     <div class="card cajacelesteagua">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -188,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <div class="col">
                     <div class="card cajagris">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -198,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col">
                     <div class="card cajacelesteagua">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
